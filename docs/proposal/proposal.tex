@@ -34,7 +34,12 @@
 \section{Introduction}
 Disaggregated systems are a new approach to datacenters which allow scaling up at a resource granularity. Rather than just upgrading or adding individual servers (which contain a CPU, network, and memory) we can individually scale up the number of CPUs, memory, or network capabilities by itself. However, as you scale up, you will have an increasing number of applications which will cause interference throughout the entire system due to additional pressure on the network or memory. The goal of this project is to attempt to characterize this relation (how scaling up resources affects the resource interference) as well as different methods to isolate resources.
 
-\section{Proposal}
+\section{Simulator}
+In order to characterize how these applications affect the system, we will build an emulator for the simplest representation of a disaggregate system (although the actual design will change depending on what isolation mechanisms we want to test). The naive solution is to model a very simple CPU architecture and have multiple CPUs running as different threads in our emulator. We'll define the different memory blocks as some global memory along with correspond APIs for reading/writing that allow locked access to the memory between the different CPUs. The unified interconnect between the threads and the different memory blocks can just be inferred based off the implementation of the memory (in that every thread (CPU) has access to the memory, but we only have 1 port for r/w) and a counter where we can define the total bandwidth capacity of the network. We can also implement more complicated network topologies via some virtual mapping to the actual memory blocks. We haven't decided on what architecture to have the CPU implementation map to, but we will leverage gcc so we don't have to write a compiler to specifically target the emulator.
+
+\section{Applications}
+
+\section{Isolation Mechanisms}
 
 \section{Conclusion}
 
