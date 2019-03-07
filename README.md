@@ -1,2 +1,2 @@
 # disaggregate
-Simulator for a simple scalable disaggregated system/datacenter. Additional features include optional isolation mechanisms such as containers, cache partitioning, and network bandwidth partitioning. Will also include a benchmark suit to characterize scaling different resources vs. resource interference.
+Emulator for a simple scalable disaggregated system/datacenter. We will use a physical cluster and emulate storage disaggregation by exposing an API to access memory with different latencies depending on the location on the rack. We will use several applications to benchmark scaling such as Memcached as well as how applying different isolation mechanisms affect this.
