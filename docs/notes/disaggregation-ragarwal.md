@@ -87,3 +87,13 @@ ath 1(submit request, cli) ath 2(ser): 2 servers in 1 rack
 tell memory through docker container, docker container- 
 
 Zibian: web search: index in memory, data file in disk
+
+=========Mar 20 ================
+No direct memory access between servers
+Measure latency from one server to another disks,
+measure CPU to local disk latency in the remote server (as with client)
+measure CPU to memmory latency in the remote server
+Estimate the latency from local CPU to remote memory
+
+Application workload generator coule be used to assess performance
+Isolation mechanism: network bandwidth partition(Axial casst load capacity) 
