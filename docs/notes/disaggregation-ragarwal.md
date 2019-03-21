@@ -88,7 +88,7 @@ tell memory through docker container, docker container-
 
 Zibian: web search: index in memory, data file in disk
 
-=========Mar 20 ================
+#### Mar 20
 No direct memory access between servers
 Measure latency from one server to another disks,
 measure CPU to local disk latency in the remote server (as with client)
