@@ -97,3 +97,22 @@ Estimate the latency from local CPU to remote memory
 
 Application workload generator coule be used to assess performance
 Isolation mechanism: network bandwidth partition(Axial casst load capacity) 
+
+### April 10 
+Using MangoDB to measure the latency from memory and from disk
+Memory access can be done by access same key-value pair for several times
+It will store in local memory after first fetch
+Disk access can be done by access different/random/streaming key-value pairs 
+Workload Generator: YCSB (contact with Shuang Chen for open-loop YCSB implementation)
+Root Authority would be fixed by Christina
+Use cluster 3 and cluster 4 to run jobs
+Tcpdump may be used later for every request 
+YCSB can run in different machine to measure remote disk access time
+
+Expecation: 
+How the local and remote memory parts will influence the performance? (different percentage)
+Change the request cluster: size, distribution, popularity, interval
+Different applicaiton performance over disaggregation: Memcached
+Different read/write issues
+Overhead of remote access 
+Remote access in different racks, what point remote aggregation will make sense
