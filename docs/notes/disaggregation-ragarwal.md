@@ -116,3 +116,9 @@ Different applicaiton performance over disaggregation: Memcached
 Different read/write issues
 Overhead of remote access 
 Remote access in different racks, what point remote aggregation will make sense
+
+### April 17
+The job is divided into 3 parts: 1) further understanding of YCSB 2) How TCP-dump works and how 
+use it with YCSB 3) How to inject latency into Mongodb
+YCSB: draw the distribution figure of requests for local and remote access; understand the number
+of open-loop YCSB
