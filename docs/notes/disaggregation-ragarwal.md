@@ -122,3 +122,12 @@ The job is divided into 3 parts: 1) further understanding of YCSB 2) How TCP-dum
 use it with YCSB 3) How to inject latency into Mongodb
 YCSB: draw the distribution figure of requests for local and remote access; understand the number
 of open-loop YCSB
+
+### April 24
+Draw the output of different QPS with latency like shown in PARTIES paper
+http://www.csl.cornell.edu/~delimitrou/papers/2019.asplos.parties.pdf
+Replicate the way they present (99% latency)
+Run memory in docker container and set memory MongoDB can use (ask Shuang about it)
+Use <key, value> storage in the request to decide which mongodb to get data
+Different mongodb by IP address, change YCSB implementation 
+One server runs mongodb and one server runs YCSB and mongodb to plot the latency diagram
