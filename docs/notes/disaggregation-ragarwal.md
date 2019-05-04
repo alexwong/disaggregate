@@ -131,3 +131,11 @@ Run memory in docker container and set memory MongoDB can use (ask Shuang about 
 Use <key, value> storage in the request to decide which mongodb to get data
 Different mongodb by IP address, change YCSB implementation 
 One server runs mongodb and one server runs YCSB and mongodb to plot the latency diagram
+
+### May 1
+Use containers 
+Set 14 cores, CPU set for docker 
+Set memory  —cpus=14 
+Different machine (YCSB in 3, mongoldb on 4)
+Check on the key, set different ip
+Presentation: what is , why make sense, what application, challenges, latency ,network bandwidth, describe implementing, applications, highlight the motivation 
